@@ -16,3 +16,4 @@ Create a Render Web Service from this repository. `render.yaml` uses Node 22, `n
 
 ## Security and retention
 Never commit `.env` or bot tokens. Rotate the webhook secret if exposed. Database cleanup runs hourly and removes messages and processed-update records older than 30 days; cascading foreign keys remove empty chats only when their messages are deleted. No live Telegram deployment is tested by the local test command.
+# amoguschat
