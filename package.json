@@ -1,0 +1,9 @@
+{
+  "name": "cloud-phone-telegram-bridge",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": { "start": "node server.js", "test": "node --test test/*.test.js", "check": "node --check server.js && node --check public/app.js && node --check scripts/setup-webhook.js && node --check scripts/keepalive.js", "webhook": "node scripts/setup-webhook.js", "keepalive": "node scripts/keepalive.js" },
+  "dependencies": { "dotenv": "^17.2.3", "express": "^5.1.0", "pg": "^8.16.3" },
+  "devDependencies": { "pg-mem": "^3.0.5", "supertest": "^7.1.4", "jsdom": "^26.1.0" }
+}
